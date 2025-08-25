@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit} from "next/font/google";
 import "./globals.css";
-import Provider from "./provider";
 import { ClerkProvider } from "@clerk/nextjs";
+import ClientProvider from "./ClientProvider";
 const outfit=Outfit({subsets:['latin']})
 
 export const metadata: Metadata = {
@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={outfit.className}
       > 
-      <Provider>
+      <ClientProvider>
          {children}
-      </Provider>
+      </ClientProvider>
        
       </body>
     </html>
