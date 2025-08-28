@@ -53,15 +53,7 @@ function Provider({children,}:Readonly<{children:React.ReactNode}>)
 
           <div>
             <Header/>
-             {isAuthPage ? (
-        <div className="auth-container">{children}</div> // only show auth form
-      ) : (
-        <>
-          <Hero />
-          <PopularCityList />
-          {children}
-        </>
-      )}
+            {children}
         </div>
 
       </UserDetailContext.Provider>

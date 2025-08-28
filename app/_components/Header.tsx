@@ -33,9 +33,9 @@ const Header = () => {
             {!user?<SignInButton mode='modal'>
             <Button>Get Started</Button>
             </SignInButton>:
-            (<Link href={'/create-trip'}>
-                <Button>
-                    Create-Trip
+            (<Link href={'/create-new-trip'}>
+                <Button className='transition all cursor-pointer'>
+                    Create-New-Trip
                 </Button>
             </Link>)
             }
