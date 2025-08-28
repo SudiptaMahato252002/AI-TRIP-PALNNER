@@ -50,7 +50,7 @@ const Hero = () => {
             {/* {Suggestion Options} */}
             <div className='flex gap-5 p-5'>
                 {suggestions.map((suggestion,index)=>{return(
-                <div key={suggestion.title} className='flex items-center gap-2 border rounded-full p-2 hover:bg-primary'>
+                <div key={suggestion.title} className='flex items-center gap-2 border rounded-full p-2 cursor-pointer hover:border-primary hover:text-primary'>
                     {suggestion.icon}
                     <h2 className='text-sm'>{suggestion.title}</h2>
                 </div>
